@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+    
+    <ImageView
+        android:id="@+id/slika_glumca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"/>
+
+    <TextView
+        android:id="@+id/podaci_O_glumcu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/slika_glumca"/>
+
+    <TextView
+        android:id="@+id/glumio_U"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slika_glumca"
+        android:fontFamily="sans-serif-black"
+        android:text="Glumio u Filmovima"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/filmoviUloge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slika_glumca"></ListView>
+
+
+
+
+
+</RelativeLayout>
